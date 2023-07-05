@@ -2,13 +2,33 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Navegador from '../components/Navegador.astro'
+import Slider from '../components/Slider.astro'
+import Portada from '../components/Portada.astro'
+import Mapag from	'../components/Mapag.astro'
 ---
 
 <Layout title="Welcome to Astro.">
 
 		<main>
-
+			
 			<Navegador />
+			
+			
+			<div style="padding-top:100px; poistion:flex;">
+				<img src="../../fotomar3.jpg" style="margin:auto; border-radius:3%; opacity:56%">
+			</div>
+		<div style="position:absolute; top:200px; right:300px;">
+			<Slider />
+		</div>
 
-		</main>
+	</div>  
+	<div class="Mapa">  
+		<div id="map"></div>
+	</div>  
+	
+	<script src="../components/script.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+	<div>
+			
+			</main>
 
