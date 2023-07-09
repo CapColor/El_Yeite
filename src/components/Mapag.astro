@@ -2,10 +2,26 @@
 
 ---
 
-<div class="Mapa">  
-	<div id="map"></div>
-</div>  
 
-<script src="script.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
 <div>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script>
+    function initMap() {
+      // Crea una instancia del objeto de mapa
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644}, // Define las coordenadas del centro del mapa
+        zoom: 8 // Define el nivel de zoom inicial
+      });
+    };
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI2aQbALZ0GtsA3Li-oUrXaM0hUX9Bmlo&callback=initMap" async defer></script>
+</div>
