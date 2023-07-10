@@ -5,15 +5,18 @@ import Slider from '../components/Slider.astro'
 import Portada from '../components/Portada.astro'
 import Mapag from	'../components/Mapag.astro'
 import Tarjeta_servicios from	'../components/Tarjeta_servicios.astro'
+import Footer from	'../components/Footer.astro'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="El Yeite">
 
 		<main style="background-color: rgb(248, 248, 248);">
 			
 			<Navegador />
-		
-			<div style="padding-top:100px; poistion:flex;">
+			<div style="margin:auto; padding-top:70px; font-size:8	0px;">
+				<h2 class="mb-5 text-8xl font-extrabold tracking-tight text-bg-orange-500 dark:text-white" style="margin-left:450px; color:orange) ">El Yeite</h2>
+			</div>
+			<div style="padding-top:20px; poistion:flex;">
 				<img src="../../fotomar3.jpg" style="margin:auto; border-radius:3%; opacity:30%">
 			</div>
 		<div style="position:absolute; top:200px; right:300px;">
@@ -29,6 +32,8 @@ import Tarjeta_servicios from	'../components/Tarjeta_servicios.astro'
 		<img src="../../public/wsp.png" alt="WhatsApp" style="width:80px;" />
 	  </a>
 	</div>
-			
+		<div>
+		<Footer />	
+		</div>			
 			</main>
 
