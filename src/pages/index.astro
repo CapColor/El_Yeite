@@ -15,18 +15,24 @@ import Footer from	'../components/Footer.astro'
 			
 			<Navegador />
 			<div style="margin:auto; padding-top:70px; font-size:8	0px;">
-				<h2 class="mb-5 text-8xl font-extrabold tracking-tight text-orange-500 dark:text-white md:text-1xl md:text-orange-300 md:px-6; md:py-2">El Yeite</h2>
+				<h2 class="mb-5 text-8xl font-extrabold tracking-tight text-orange-500 dark:text-white md:text-center md:text-orange-400 md:px-300; md:py-2;" style="text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">El Yeite</h2>
 			</div>
-			<div style="padding-top:20px; poistion:flex;">
-				<img src="../../fotomar3.jpg" style="margin:auto; border-radius:3%; opacity:30%">
+			<div >
+				<img src="../../fotomar3.jpg" style="margin:auto; border-radius:10%; opacity:30%; poistion:absolute; top:500px;">
 			</div>
 		
 			<Slider />
 		
-		<div style="padding-top:50px;">
+	
+	
+	<div class="md:py-4 md:my-auto md:mx-auto">
+		<iframe class="md:mx-auto rounded shadow-2x1 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.828700066147!2d-56.68270191008851!3d-36.70265405038165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c6ff25ef4621f%3A0xe079b4d958ccf4e0!2sEl%20Yeite!5e0!3m2!1ses!2sar!4v1689135396518!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+		
+	<div style="padding-top:200px;">
 		<Tarjeta_servicios />
 	</div>
-		<Mapag />
+
 	</div>  
 <div style="position: fixed; top:500px; left:1150px;z-index:3000">
 	<a href="https://wa.me/05491136319160" target="_blank">
@@ -34,8 +40,8 @@ import Footer from	'../components/Footer.astro'
 	  </a>
 	</div>
 
-	
+<div class="md:py-40">	
 		<Footer />	
-				
+	</div>			
 			</main>
 
